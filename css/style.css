@@ -134,7 +134,7 @@ header {
 
  .video-mask {
     width: 728px;
-    height: 410px;
+    height: 100%;
    -webkit-border-radius: 10px; 
    -moz-border-radius: 10px;
     border-radius: 10px; 
@@ -176,6 +176,18 @@ header {
         .content p {
             width: 80%;
         }
+    }
+
+    @media (max-width:600px){
+    
+        .video-mask, .video {
+            max-width: 90vw;
+            margin: 1rem auto;
+        }
+        .video-mask {
+            height: 100%;
+        }
+       
     }
 
 
